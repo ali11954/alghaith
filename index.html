@@ -2,429 +2,137 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="الغيث لتصميم وإنشاء الأنظمة والتطبيقات - الحديدة، اليمن. حلول رقمية متكاملة للشركات الصغيرة والمتوسطة">
-    <meta name="keywords" content="الغيث, الحديدة, اليمن, أنظمة إدارية, تطبيقات, برمجة, تصميم مواقع">
-    <meta name="author" content="الغيث - الحديدة">
-    <title>الغيث | تصميم وإنشاء الأنظمة والتطبيقات - الحديدة، اليمن</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>الغيث | تصميم وتطوير الأنظمة والتطبيقات حسب الطلب - الحديدة، اليمن</title>
+    <meta name="description" content="الغيث - تصميم وتطوير أنظمة إدارية مخصصة وتطبيقات للشركات في اليمن">
+    <meta name="keywords" content="الغيث, تصميم أنظمة, تطبيقات, اليمن, الحديدة, أنظمة إدارية">
+    <meta name="author" content="الغيث - Al-Ghaith">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="الغيث - تصميم وتطوير الأنظمة والتطبيقات">
+    <meta property="og:description" content="نصمم أنظمتك حسب أعمالك وطلبك - الحديدة، اليمن">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ali11954.github.io/alghaith">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="الغيث - تصميم وتطوير الأنظمة والتطبيقات">
+    
+    <meta name="theme-color" content="#0a2f2a">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wg7ica9yp8");
+    </script>
+    
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Cairo', 'Tahoma', 'Arial', sans-serif;
-            background: #f0f4f8;
-            color: #1e2a3e;
-            scroll-behavior: smooth;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 20px;
-        }
-
-        /* الهيدر */
-        header {
-            background: #0a2f2a;
-            color: white;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo span {
-            color: #7dd3c1;
-            font-size: 32px;
-        }
-
-        .logo small {
-            font-size: 12px;
-            color: #b2e0d4;
-            display: block;
-            line-height: 1.2;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #7dd3c1;
-        }
-
-        /* القسم الرئيسي */
-        .hero {
-            background: linear-gradient(135deg, #0a2f2a, #1a5c4e);
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: "🌊";
-            position: absolute;
-            font-size: 200px;
-            opacity: 0.05;
-            bottom: -50px;
-            left: -50px;
-        }
-
-        .hero h1 {
-            font-size: 52px;
-            margin-bottom: 20px;
-        }
-
-        .hero h1 span {
-            color: #f5e56b;
-        }
-
-        .hero .location {
-            display: inline-block;
-            background: rgba(255,255,255,0.2);
-            padding: 5px 15px;
-            border-radius: 30px;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: auto;
-            opacity: 0.9;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #f5e56b;
-            color: #0a2f2a;
-            padding: 14px 35px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 30px;
-            transition: 0.3s;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .btn:hover {
-            background: #ffea8a;
-            transform: scale(1.02);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid #f5e56b;
-            color: #f5e56b;
-            margin-right: 15px;
-        }
-
-        .btn-outline:hover {
-            background: #f5e56b;
-            color: #0a2f2a;
-        }
-
-        /* الأقسام */
-        .section {
-            padding: 70px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #0a2f2a;
-        }
-
-        .section-sub {
-            text-align: center;
-            color: #5a6e7a;
-            margin-bottom: 50px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-            border: 1px solid #e2e8f0;
-        }
-
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
-        }
-
-        .card-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .card h3 {
-            color: #0a2f2a;
-            margin-bottom: 15px;
-            font-size: 22px;
-        }
-
-        .card p {
-            color: #475569;
-            line-height: 1.6;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #e6f7f2;
-            color: #0a2f2a;
-            padding: 5px 12px;
-            border-radius: 30px;
-            font-size: 13px;
-            margin-top: 15px;
-        }
-
-        /* المشاريع */
-        .project-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-img {
-            background: linear-gradient(135deg, #d1fae5, #a7f3d0);
-            height: 160px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-        }
-
-        .project-info {
-            padding: 20px;
-        }
-
-        /* إحصائيات */
-        .stats {
-            background: #0a2f2a;
-            color: white;
-            padding: 50px 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 48px;
-            font-weight: bold;
-            color: #f5e56b;
-        }
-
-        /* نموذج الاتصال */
-        .contact-form {
-            background: white;
-            border-radius: 25px;
-            padding: 35px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        input, textarea, select {
-            width: 100%;
-            padding: 12px 15px;
-            margin: 10px 0;
-            border: 1px solid #cbd5e1;
-            border-radius: 12px;
-            font-family: inherit;
-            font-size: 16px;
-        }
-
-        input:focus, textarea:focus, select:focus {
-            outline: none;
-            border-color: #1a5c4e;
-            box-shadow: 0 0 0 3px rgba(26,92,78,0.1);
-        }
-
-        /* خريطة */
-        .map-container {
-            border-radius: 20px;
-            overflow: hidden;
-            height: 300px;
-            margin-top: 30px;
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        /* شهادات العملاء */
-        .testimonial-card {
-            background: white;
-            border-radius: 20px;
-            padding: 25px;
-            text-align: center;
-            border-right: 4px solid #f5e56b;
-        }
-
-        .testimonial-text {
-            font-style: italic;
-            margin: 15px 0;
-            color: #334155;
-        }
-
-        .testimonial-name {
-            font-weight: bold;
-            color: #0a2f2a;
-        }
-
-        footer {
-            background: #0a2f2a;
-            color: #b2e0d4;
-            text-align: center;
-            padding: 40px 0;
-            margin-top: 40px;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-
-        .footer-links a {
-            color: #b2e0d4;
-            text-decoration: none;
-        }
-
-        .footer-links a:hover {
-            color: #f5e56b;
-        }
-
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            left: 30px;
-            background: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 32px;
-            text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            transition: 0.3s;
-            z-index: 99;
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-        }
-
-        /* رسالة نجاح */
-        .success-message {
-            display: none;
-            background: #10b981;
-            color: white;
-            padding: 15px;
-            border-radius: 12px;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                flex-direction: column;
-                gap: 12px;
-                margin-top: 15px;
-                width: 100%;
-                text-align: center;
-            }
-            .hero h1 {
-                font-size: 32px;
-            }
-            .btn-outline {
-                margin-right: 0;
-                margin-top: 10px;
-            }
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Cairo', 'Tahoma', 'Arial', sans-serif; background: #f0f4f8; color: #1e2a3e; scroll-behavior: smooth; font-size: 16px; }
+        @media (max-width: 768px) { body { font-size: 14px; } .container { padding: 0 15px; } .section { padding: 40px 0; } .section-title { font-size: 28px; } .hero h1 { font-size: 32px !important; } }
+        .container { max-width: 1200px; margin: auto; padding: 0 20px; }
+        header { background: #0a2f2a; color: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.1); }
+        nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        .logo { font-size: 22px; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+        .logo span { color: #7dd3c1; font-size: 26px; }
+        .logo small { font-size: 10px; color: #b2e0d4; display: block; line-height: 1.2; }
+        .menu-toggle { display: none; background: none; border: none; color: white; font-size: 28px; cursor: pointer; padding: 5px 10px; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; font-size: 14px; padding: 8px 0; }
+        .nav-links a:hover { color: #7dd3c1; }
+        .translate-btn { background: #f5e56b; color: #0a2f2a; border: none; padding: 6px 15px; border-radius: 30px; font-size: 13px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-right: 15px; }
+        .translate-btn:hover { background: #ffea8a; transform: scale(1.02); }
+        @media (max-width: 768px) { .menu-toggle { display: block; } .nav-links { display: none; width: 100%; flex-direction: column; gap: 0; margin-top: 15px; background: #0a2f2a; border-radius: 12px; overflow: hidden; } .nav-links.show { display: flex; } .nav-links a { padding: 15px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 16px; } .translate-btn { margin-right: 0; margin-left: 10px; } }
+        body.english { font-family: 'Segoe UI', sans-serif; direction: ltr; text-align: left; }
+        body.english .container, body.english .hero, body.english .section { direction: ltr; text-align: left; }
+        body.english .testimonial-card { border-left: 4px solid #f5e56b; border-right: none; }
+        .hero { background: linear-gradient(135deg, #0a2f2a, #1a5c4e); color: white; padding: 60px 0; text-align: center; }
+        .hero h1 { font-size: 36px; margin-bottom: 15px; }
+        .hero h1 span { color: #f5e56b; }
+        .location { display: inline-block; background: rgba(255,255,255,0.2); padding: 6px 15px; border-radius: 30px; font-size: 14px; margin-bottom: 15px; }
+        .hero p { font-size: 16px; max-width: 700px; margin: auto; line-height: 1.6; }
+        .btn { display: inline-block; background: #f5e56b; color: #0a2f2a; padding: 14px 30px; border-radius: 40px; text-decoration: none; font-weight: bold; margin-top: 25px; transition: 0.3s; border: none; cursor: pointer; font-size: 16px; }
+        .btn:hover { background: #ffea8a; transform: scale(1.02); }
+        .btn-outline { background: transparent; border: 2px solid #f5e56b; color: #f5e56b; margin-right: 12px; }
+        .btn-outline:hover { background: #f5e56b; color: #0a2f2a; }
+        .section { padding: 50px 0; }
+        .section-title { text-align: center; font-size: 28px; margin-bottom: 15px; color: #0a2f2a; }
+        .section-sub { text-align: center; color: #5a6e7a; margin-bottom: 35px; font-size: 14px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 16px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #e2e8f0; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        .card-icon { font-size: 40px; margin-bottom: 15px; }
+        .card h3 { color: #0a2f2a; margin-bottom: 10px; font-size: 18px; }
+        .card p { color: #475569; line-height: 1.5; font-size: 14px; }
+        .badge { display: inline-block; background: #e6f7f2; color: #0a2f2a; padding: 4px 10px; border-radius: 30px; font-size: 11px; margin-top: 12px; }
+        .project-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+        .project-img { background: linear-gradient(135deg, #d1fae5, #a7f3d0); height: 120px; display: flex; align-items: center; justify-content: center; font-size: 50px; }
+        .project-info { padding: 15px; }
+        .project-info h3 { font-size: 16px; margin-bottom: 8px; }
+        .stats { background: #0a2f2a; color: white; padding: 40px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; text-align: center; }
+        @media (min-width: 768px) { .stats-grid { grid-template-columns: repeat(5, 1fr); } }
+        .stat-number { font-size: 32px; font-weight: bold; color: #f5e56b; }
+        .stat-label { font-size: 13px; margin-top: 5px; opacity: 0.9; }
+        .contact-form { background: white; border-radius: 20px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        input, textarea, select { width: 100%; padding: 12px 15px; margin: 8px 0; border: 1px solid #cbd5e1; border-radius: 12px; font-family: inherit; font-size: 14px; }
+        .testimonial-card { background: white; border-radius: 16px; padding: 20px; text-align: center; border-right: 4px solid #f5e56b; }
+        .testimonial-text { font-style: italic; margin: 12px 0; color: #334155; font-size: 14px; }
+        .testimonial-name { font-weight: bold; color: #0a2f2a; font-size: 13px; }
+        footer { background: #0a2f2a; color: #b2e0d4; text-align: center; padding: 30px 0; margin-top: 40px; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 15px 0; }
+        .footer-links a { color: #b2e0d4; text-decoration: none; font-size: 13px; }
+        .whatsapp-float { position: fixed; bottom: 20px; left: 20px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: 0.3s; z-index: 99; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; justify-content: center; align-items: center; }
+        .modal.show { display: flex; }
+        .modal-content { background: white; max-width: 500px; width: 90%; border-radius: 20px; padding: 25px; }
+        .close-modal { background: #0a2f2a; color: white; border: none; padding: 10px 25px; border-radius: 30px; cursor: pointer; margin-top: 15px; width: 100%; }
+        .cookie-consent { position: fixed; bottom: 0; left: 0; right: 0; background: #0a2f2a; color: white; padding: 15px; text-align: center; z-index: 1999; transform: translateY(100%); transition: transform 0.3s; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
+        .cookie-consent.show { transform: translateY(0); }
+        .cookie-consent button { background: #f5e56b; color: #0a2f2a; border: none; padding: 8px 20px; border-radius: 30px; cursor: pointer; }
+        .counter-box { margin-top: 15px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .counter-number { font-weight: bold; color: #f5e56b; background: #1a5c4e; padding: 3px 12px; border-radius: 20px; margin-right: 8px; font-size: 18px; }
+        .trust-badge { background: #f5e56b; color: #0a2f2a; padding: 8px 20px; border-radius: 30px; display: inline-flex; align-items: center; gap: 10px; font-weight: bold; margin-bottom: 20px; }
+        .scroll-top { position: fixed; bottom: 90px; right: 20px; background: #0a2f2a; color: #f5e56b; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; font-size: 24px; z-index: 98; opacity: 0; visibility: hidden; transition: 0.3s; }
+        .scroll-top.show { opacity: 1; visibility: visible; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .hero, .stats, .section { animation: fadeIn 0.6s ease-out; }
     </style>
 </head>
 <body>
 
-<!-- زر واتساب عائم -->
+<div id="cookieConsent" class="cookie-consent">
+    <p>🍪 نستخدم ملفات تعريف الارتباط لتحسين تجربتك.</p>
+    <button id="acceptCookies">موافق</button>
+</div>
+
+<div id="privacyModal" class="modal"><div class="modal-content"><h3>🔒 سياسة الخصوصية</h3><p>نلتزم بحماية خصوصية بياناتك. المعلومات تُستخدم فقط للتواصل معك.</p><button class="close-modal" id="closePrivacy">موافق</button></div></div>
+<div id="termsModal" class="modal"><div class="modal-content"><h3>📜 شروط الاستخدام</h3><p>جميع الأنظمة المصممة هي ملكية فكرية لـ "الغيث" حتى التسليم.</p><button class="close-modal" id="closeTerms">موافق</button></div></div>
+<div id="faqModal" class="modal"><div class="modal-content"><h3>❓ الأسئلة الشائعة</h3><p>التكلفة حسب حجم النظام - تواصل معنا للحصول على عرض سعر.</p><button class="close-modal" id="closeFaq">موافق</button></div></div>
+
+<div style="text-align: center; padding-top: 10px; background: #0a2f2a;">
+    <div class="trust-badge">✓ ضمان الجودة 100% ✓ دعم فني مجاني ✓ تصميم حسب الطلب</div>
+</div>
+
 <a href="https://wa.me/967773014017" class="whatsapp-float" target="_blank">💬</a>
 
 <header>
     <div class="container">
         <nav>
-            <div class="logo">
-                <span>🌧️</span> الغيث
-                <small>لأنظمة وتطبيقات الأعمال<br>الحديدة - اليمن</small>
+            <div class="logo"><span>🌧️</span> الغيث <small>لتصميم وتطوير الأنظمة والتطبيقات<br>حسب أعمالك وطلبك</small></div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#home">الرئيسية</a> <a href="#services">خدماتي</a> <a href="#systems">أنظمتي</a>
+                <a href="#projects">أعمالي</a> <a href="#testimonials">آراء العملاء</a> <a href="#contact">اتصل بي</a>
+                <a href="#pricing">الأسعار</a>
             </div>
-            <div class="nav-links">
-                <a href="#home">الرئيسية</a>
-                <a href="#services">خدماتي</a>
-                <a href="#systems">أنظمتي</a>
-                <a href="#projects">أعمالي</a>
-                <a href="#testimonials">آراء العملاء</a>
-                <a href="#contact">اتصل بي</a>
-            </div>
+            <button class="translate-btn" id="translateBtn">🇬🇧 English</button>
         </nav>
     </div>
 </header>
@@ -432,213 +140,132 @@
 <section id="home" class="hero">
     <div class="container">
         <div class="location">📍 الحديدة - الجمهورية اليمنية</div>
-        <h1>الغيث <span>حلول رقمية</span> تنمي أعمالك</h1>
-        <p>أنظمة إدارة متكاملة وتطبيقات مخصصة للشركات الصغيرة والمتوسطة في اليمن – نسقي أعمالك بذكاء واحترافية</p>
-        <a href="#contact" class="btn">📋 اطلب نظامك الآن</a>
-        <a href="#systems" class="btn btn-outline">🔍 استكشف الحلول</a>
+        <h1>الغيث <span>نصمم أنظمتك</span> <span>حسب أعمالك</span></h1>
+        <p>نقوم بتصميم وتطوير أنظمة إدارة مخصصة وتطبيقات حسب طبيعة عملك واحتياجاتك الخاصة.</p>
+        <div style="margin-top: 20px;">
+            <a href="#contact" class="btn">📋 اطلب تصميم نظامك الآن</a>
+            <a href="#systems" class="btn btn-outline">🔍 استكشف أعمالنا</a>
+        </div>
+        <div style="margin-top: 30px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+            <a href="https://wa.me/?text=https://ali11954.github.io/alghaith" target="_blank" style="background: #25D366; color: white; padding: 8px 15px; border-radius: 30px; text-decoration: none; font-size: 12px;">📱 شارك واتساب</a>
+            <a href="https://twitter.com/intent/tweet?url=https://ali11954.github.io/alghaith&text=الغيث - تصميم أنظمة حسب الطلب" target="_blank" style="background: #1DA1F2; color: white; padding: 8px 15px; border-radius: 30px; text-decoration: none; font-size: 12px;">🐦 تويتر</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://ali11954.github.io/alghaith" target="_blank" style="background: #1877F2; color: white; padding: 8px 15px; border-radius: 30px; text-decoration: none; font-size: 12px;">📘 فيسبوك</a>
+        </div>
     </div>
 </section>
 
-<!-- إحصائيات سريعة -->
 <section class="stats">
     <div class="container">
         <div class="stats-grid">
-            <div>
-                <div class="stat-number">+30</div>
-                <div>نظام مُنفذ</div>
-            </div>
-            <div>
-                <div class="stat-number">+25</div>
-                <div>شركة واثقة</div>
-            </div>
-            <div>
-                <div class="stat-number">+4</div>
-                <div>سنوات خبرة</div>
-            </div>
-            <div>
-                <div class="stat-number">100%</div>
-                <div>دعم محلي</div>
-            </div>
+            <div><div class="stat-number">+8</div><div class="stat-label">نظام صممناه</div></div>
+            <div><div class="stat-number">+6</div><div class="stat-label">شركة واثقة</div></div>
+            <div><div class="stat-number">+2</div><div class="stat-label">سنوات خبرة</div></div>
+            <div><div class="stat-number">100%</div><div class="stat-label">تصميم حسب الطلب</div></div>
+            <div><div class="stat-number">4.9</div><div class="stat-label">⭐ تقييم العملاء</div></div>
         </div>
     </div>
 </section>
 
 <section id="services" class="section">
     <div class="container">
-        <h2 class="section-title">🌿 ماذا نقدم لك؟</h2>
-        <p class="section-sub">حلول متكاملة مصممة خصيصاً لطبيعة عملك في اليمن</p>
+        <h2 class="section-title">🌿 ماذا نصمم لك؟</h2>
         <div class="grid">
-            <div class="card">
-                <div class="card-icon">📊</div>
-                <h3>أنظمة إدارة الشركات</h3>
-                <p>مخزون، مبيعات، عملاء، موظفين، فواتير – لوحة تحكم واحدة تدير بها كل شيء.</p>
-                <span class="badge">أكثر من 6 أنظمة جاهزة</span>
-            </div>
-            <div class="card">
-                <div class="card-icon">📱</div>
-                <h3>تطبيقات الجوال</h3>
-                <p>تطبيقات Android و iOS لإدارة الأعمال عن بُعد، مع إشعارات وتقارير لحظية.</p>
-                <span class="badge">متجر Google Play</span>
-            </div>
-            <div class="card">
-                <div class="card-icon">🌐</div>
-                <h3>بوابات إلكترونية</h3>
-                <p>مواقع ولوحات تحكم مخصصة لعملائك، مع صلاحيات متعددة للمستخدمين.</p>
-                <span class="badge">ربط مع أنظمة الدفع</span>
-            </div>
-            <div class="card">
-                <div class="card-icon">🛠️</div>
-                <h3>دعم فني وصيانة</h3>
-                <p>دعم مستمر وتحديثات دورية لأنظمتك، مع تدريب فريقك على الاستخدام.</p>
-                <span class="badge">ضمان سنة كاملة</span>
-            </div>
+            <div class="card"><div class="card-icon">📊</div><h3>تصميم أنظمة إدارة الشركات</h3><p>مخزون، مبيعات، عملاء، موظفين، فواتير حسب طلبك</p><span class="badge">نسلمك النظام جاهزاً</span></div>
+            <div class="card"><div class="card-icon">📱</div><h3>تطبيقات الجوال</h3><p>Android و iOS حسب احتياجاتك</p><span class="badge">نسلمك التطبيق جاهزاً</span></div>
+            <div class="card"><div class="card-icon">🌐</div><h3>بوابات إلكترونية</h3><p>مواقع ولوحات تحكم مخصصة</p><span class="badge">نسلمك البوابة جاهزة</span></div>
+            <div class="card"><div class="card-icon">🤖</div><h3>دردشة آلية</h3><p>تواصل فوري مع العملاء 24/7</p><span class="badge">خدمة مجانية</span></div>
+            <div class="card"><div class="card-icon">🛠️</div><h3>دعم فني وصيانة</h3><p>دعم مستمر وتحديثات دورية</p><span class="badge">ضمان سنة كاملة</span></div>
+            <div class="card"><div class="card-icon">💳</div><h3>بوابة دفع إلكتروني</h3><p>ربط مع PayPal، Stripe</p><span class="badge">تسهيل الدفع</span></div>
         </div>
     </div>
 </section>
 
 <section id="systems" class="section" style="background:#e8f4f0;">
     <div class="container">
-        <h2 class="section-title">⚙️ أنظمة الغيث الإدارية</h2>
-        <p class="section-sub">اختر النظام الذي يناسب نشاطك التجاري في اليمن</p>
+        <h2 class="section-title">✅ أنظمتنا المنفذة</h2>
         <div class="grid">
-            <div class="card">
-                <h3>🏪 نظام نقاط البيع (POS)</h3>
-                <p>مخصص للمحلات التجارية – فواتير سريعة، مخزون لحظي، تقارير مبيعات يومية.</p>
-            </div>
-            <div class="card">
-                <h3>👥 CRM متكامل</h3>
-                <p>إدارة العملاء، تذكيرات، سجل المكالمات، وتحليل ولاء العملاء.</p>
-            </div>
-            <div class="card">
-                <h3>🧾 المحاسبة المبسطة</h3>
-                <p>مدفوعات، مقبوضات، تقارير الأرباح والخسائر، مناسبة للشركات الصغيرة.</p>
-            </div>
-            <div class="card">
-                <h3>👔 إدارة الموارد البشرية</h3>
-                <p>دوام، إجازات، رواتب، صلاحيات وإشعارات للموظفين.</p>
-            </div>
-            <div class="card">
-                <h3>📦 إدارة سلسلة التوريد</h3>
-                <p>مشتريات، موردين، طلبات شراء، وتنبيهات المخزون المنخفض.</p>
-            </div>
-            <div class="card">
-                <h3>📊 لوحة تحليلات متقدمة</h3>
-                <p>رسوم بيانية، مؤشرات أداء، وتقارير آلية لاتخاذ القرارات.</p>
-            </div>
+            <div class="card"><h3>🧹 نظام إدارة متعهد خدمات النظافة</h3><p>لعبدالغني الجغرافي - متعاقد مع 3 شركات</p><span class="badge">✓ تم التسليم</span></div>
+            <div class="card"><h3>🌾 نظام الاستشارات الزراعية</h3><p>لطلعت هائل - تنظيم عقود المتعهدين</p><span class="badge">✓ تم التسليم</span></div>
+            <div class="card"><h3>🏨 نظام السكنات والفنادق الشامل</h3><p>لم.علي احمد - إدارة الحجوزات</p><span class="badge">✓ تم التسليم</span></div>
+            <div class="card"><h3>👷 نظام إدارة العمال والمهام</h3><p>لم.علي احمد - متابعة المهام</p><span class="badge">✓ تم التسليم</span></div>
+            <div class="card"><h3>❄️ نظام ثلاجة الصليف المركزية</h3><p>لعبدالله يحي - إدارة التبريد</p><span class="badge">✓ تم التسليم</span></div>
+            <div class="card"><h3>🌿 نظام تقييم بيئة العمل والنظافة</h3><p>لم.علي احمد - قيد التصميم</p><span class="badge">🟡 قيد التصميم</span></div>
         </div>
     </div>
 </section>
 
 <section id="projects" class="section">
     <div class="container">
-        <h2 class="section-title">📌 نماذج من أعمال الغيث</h2>
-        <p class="section-sub">أنظمة نفذناها لشركات في الحديدة واليمن</p>
+        <h2 class="section-title">📌 معرض أعمالنا</h2>
         <div class="grid">
-            <div class="project-card">
-                <div class="project-img">🏬</div>
-                <div class="project-info">
-                    <h3>مجمع ساري التجاري - الحديدة</h3>
-                    <p>نظام متكامل: مبيعات + مخزون + عملاء + فواتير إلكترونية لـ 3 فروع في الحديدة.</p>
-                    <span class="badge">✓ تم التسليم</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">🍕</div>
-                <div class="project-info">
-                    <h3>مطاعم الخليج - الحديدة</h3>
-                    <p>نظام طلبات وتوصيل، شاشات مطبخ، وتكامل مع تطبيق جوال.</p>
-                    <span class="badge">✓ قيد التشغيل</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">📚</div>
-                <div class="project-info">
-                    <h3>مدارس النهضة الحديثة - الحديدة</h3>
-                    <p>نظام إدارة طلاب، حضور، دفاتر درجات، وتقارير أداء.</p>
-                    <span class="badge">✓ عرض توضيحي</span>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-img">🏥</div>
-                <div class="project-info">
-                    <h3>عيادات السلام - الحديدة</h3>
-                    <p>نظام إدارة مواعيد المرضى، ملفات طبية، وفواتير علاجية.</p>
-                    <span class="badge">✓ قيد التطوير</span>
-                </div>
-            </div>
+            <div class="project-card"><div class="project-img">🧹</div><div class="project-info"><h3>نظام أرض الجوهرة</h3><p>لعبدالغني الجغرافي</p><span class="badge">✓ تم التسليم</span></div></div>
+            <div class="project-card"><div class="project-img">🌾</div><div class="project-info"><h3>نظام طلعت هائل</h3><p>استشارات زراعية</p><span class="badge">✓ تم التسليم</span></div></div>
+            <div class="project-card"><div class="project-img">🪡</div><div class="project-info"><h3>نظام عاملات الخياطة</h3><p>لعراقية زيلعي</p><span class="badge">🟡 قيد التصميم</span></div></div>
+            <div class="project-card"><div class="project-img">🏨</div><div class="project-info"><h3>النظام الشامل للسكنات</h3><p>لم.علي احمد</p><span class="badge">✓ تم التسليم</span></div></div>
+            <div class="project-card"><div class="project-img">👷</div><div class="project-info"><h3>مكتب عمال راس عيسى</h3><p>لم.علي احمد</p><span class="badge">✓ تم التسليم</span></div></div>
+            <div class="project-card"><div class="project-img">❄️</div><div class="project-info"><h3>ثلاجة الصليف المركزية</h3><p>لعبدالله يحي</p><span class="badge">✓ تم التسليم</span></div></div>
+            <div class="project-card"><div class="project-img">🌿</div><div class="project-info"><h3>نظام تقييم البيئة</h3><p>لم.علي احمد</p><span class="badge">🟡 قيد التصميم</span></div></div>
         </div>
     </div>
 </section>
 
-<!-- شهادات العملاء -->
+<section id="pricing" class="section" style="background:#e8f4f0;">
+    <div class="container">
+        <h2 class="section-title">💰 خطط الأسعار</h2>
+        <div class="grid">
+            <div class="card" style="text-align:center"><h3>📦 باقة أساسية</h3><div style="font-size:22px;color:#f5e56b">يحدد عند الطلب</div><a href="#contact" class="btn" style="background:#0a2f2a;color:white">اطلب الآن</a></div>
+            <div class="card" style="text-align:center;border:2px solid #f5e56b"><h3>⭐ باقة احترافية</h3><div style="font-size:22px;color:#f5e56b">يحدد عند الطلب</div><span class="badge">الأكثر طلباً</span><a href="#contact" class="btn" style="background:#0a2f2a;color:white">اطلب الآن</a></div>
+            <div class="card" style="text-align:center"><h3>👑 باقة شاملة</h3><div style="font-size:22px;color:#f5e56b">تواصل معنا</div><a href="#contact" class="btn" style="background:#0a2f2a;color:white">اطلب الآن</a></div>
+        </div>
+    </div>
+</section>
+
 <section id="testimonials" class="section" style="background:#f9fafb;">
     <div class="container">
         <h2 class="section-title">💬 ماذا يقول عملاؤنا؟</h2>
-        <p class="section-sub">آراء أصحاب الشركات الذين وثقوا بالغيث</p>
+        <div style="text-align:center;margin-bottom:20px"><span style="font-size:48px">⭐⭐⭐⭐⭐</span><p>4.9 / 5 من 6 تقييمات</p></div>
         <div class="grid">
-            <div class="testimonial-card">
-                <div>⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">"نظام الغيث سهل علينا إدارة المخزون والمبيعات بشكل كبير. أنصح أي تاجر في الحديدة بالتعامل معهم."</p>
-                <p class="testimonial-name">- أبو أحمد، مجمع ساري</p>
-            </div>
-            <div class="testimonial-card">
-                <div>⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">"تطبيق المطعم الذي صممه لنا الغيث زاد مبيعات التوصيل بأكثر من 40%. فريق محترم ومتعاون."</p>
-                <p class="testimonial-name">- محمد الحسني، مطاعم الخليج</p>
-            </div>
-            <div class="testimonial-card">
-                <div>⭐⭐⭐⭐⭐</div>
-                <p class="testimonial-text">"دعم فني سريع وجودة عالية. نظام إدارة الطلاب سهل علينا متابعة الحضور والدرجات."</p>
-                <p class="testimonial-name">- أ. سميرة، مدارس النهضة</p>
-            </div>
+            <div class="testimonial-card"><div>⭐⭐⭐⭐⭐</div><p class="testimonial-text">نظام أرض الجوهرة سهل إدارة عقود النظافة. تصميم متكامل.</p><p class="testimonial-name">- عبدالغني الجغرافي</p></div>
+            <div class="testimonial-card"><div>⭐⭐⭐⭐⭐</div><p class="testimonial-text">نظام طلعت هائل نظم عقود المتعهدين. فريق محترف.</p><p class="testimonial-name">- طلعت هائل</p></div>
+            <div class="testimonial-card"><div>⭐⭐⭐⭐⭐</div><p class="testimonial-text">نظام ثلاجة الصليف سهل إدارة التبريد والتخزين.</p><p class="testimonial-name">- عبدالله يحي</p></div>
+            <div class="testimonial-card"><div>⭐⭐⭐⭐⭐</div><p class="testimonial-text">النظام الشامل للسكنات سهل إدارة الحجوزات.</p><p class="testimonial-name">- م.علي احمد</p></div>
+            <div class="testimonial-card"><div>⭐⭐⭐⭐⭐</div><p class="testimonial-text">نظام إدارة العمال حل مشكلة المتابعة.</p><p class="testimonial-name">- م.علي احمد</p></div>
+            <div class="testimonial-card"><div>⭐⭐⭐⭐⭐</div><p class="testimonial-text">فريق الغيث محترف. نظام البيئة تحت التطوير.</p><p class="testimonial-name">- م.علي احمد</p></div>
         </div>
     </div>
 </section>
 
 <section id="contact" class="section">
     <div class="container">
-        <h2 class="section-title">📞 اطلب نظام الغيث الآن</h2>
-        <p class="section-sub">سنتواصل معك خلال 24 ساعة لمناقشة احتياجاتك</p>
-        <div class="grid" style="grid-template-columns: 1fr 1fr;">
+        <h2 class="section-title">📞 اطلب تصميم نظامك الآن</h2>
+        <div class="grid">
             <div class="contact-form">
-                <h3 style="margin-bottom:20px;">✉️ أرسل تفاصيل مشروعك</h3>
+                <h3>✉️ أرسل تفاصيل مشروعك</h3>
                 <form id="contactForm">
                     <input type="text" id="name" placeholder="الاسم الكامل" required>
                     <input type="email" id="email" placeholder="البريد الإلكتروني" required>
-                    <input type="tel" id="phone" placeholder="رقم الجوال (واتساب)" value="+967">
+                    <input type="tel" id="phone" placeholder="رقم الجوال" value="+967">
                     <select id="systemType">
-                        <option value="">نوع النظام المطلوب</option>
-                        <option>نظام مبيعات ومخزون</option>
-                        <option>نظام عملاء CRM</option>
-                        <option>نظام محاسبة</option>
-                        <option>نظام موارد بشرية</option>
-                        <option>نظام مطاعم</option>
-                        <option>نظام عيادات</option>
+                        <option>نوع النظام الذي تريد تصميمه</option>
+                        <option>نظام مبيعات ومخزون</option><option>نظام عملاء CRM</option>
+                        <option>نظام محاسبة</option><option>نظام موارد بشرية</option>
+                        <option>نظام مطاعم</option><option>نظام عيادات</option>
                         <option>نظام متكامل شامل</option>
                     </select>
-                    <textarea id="message" rows="3" placeholder="وصف مختصر لعملك واحتياجاتك..."></textarea>
-                    <button type="submit" class="btn" style="background:#0a2f2a; color:white; width:100%;">إرسال الطلب</button>
+                    <textarea id="message" rows="3" placeholder="وصف احتياجاتك..."></textarea>
+                    <button type="submit" class="btn" style="background:#0a2f2a; color:white; width:100%;">اطلب التصميم الآن</button>
                 </form>
-                <div id="successMessage" class="success-message">✓ تم إرسال طلبك بنجاح! سنتواصل معك قريباً</div>
+                <div id="successMessage" class="success-message">✓ تم إرسال طلبك بنجاح!</div>
             </div>
-            <div>
-                <div class="card" style="text-align:center; margin-bottom:30px;">
-                    <div class="card-icon">📞</div>
-                    <h3>تواصل مباشر</h3>
-                    <p>واتساب: <strong>+967 773014017</strong></p>
-                    <p>هاتف: <strong>+967 711127883</strong></p>
-                    <p>بريد: <strong>alimubark440@gmail.com</strong></p>
-                    <hr style="margin:20px 0;">
-                    <p>📍 نعمل عن بُعد – نخدم جميع مدن الجمهورية اليمنية</p>
-                    <p>📍 مركزنا: الحديدة - اليمن</p>
-                    <a href="#" class="btn" style="background:#0a2f2a; color:white; margin-top:15px; display:inline-block;" id="downloadBrochure">📱 حمل ملفي التعريفي</a>
-                </div>
+            <div class="card" style="text-align:center">
+                <div class="card-icon">📞</div>
+                <h3>تواصل مباشر</h3>
+                <p>واتساب: <strong>+967 773014017</strong></p>
+                <p>هاتف: <strong>+967 711127883</strong></p>
+                <p>بريد: <strong>alimubark440@gmail.com</strong></p>
+                <hr><p>📍 الحديدة - اليمن</p>
+                <a href="#" class="btn" style="background:#0a2f2a; color:white; margin-top:15px;" id="downloadBrochure">📱 حمل ملفي التعريفي</a>
             </div>
-        </div>
-
-        <!-- خريطة الحديدة -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123456!2d42.95!3d14.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1601f5c6b8d6b8b9%3A0x8a7b2c3d4e5f6a7b!2z2YXYsdmK2Kkg2KfZhNmF2YbZg9ip!5e0!3m2!1sar!2s!4v1700000000000!5m2!1sar!2s" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </div>
 </section>
@@ -646,54 +273,72 @@
 <footer>
     <div class="container">
         <div class="footer-links">
-            <a href="#home">الرئيسية</a>
-            <a href="#services">خدماتنا</a>
-            <a href="#systems">أنظمتنا</a>
-            <a href="#projects">أعمالنا</a>
-            <a href="#contact">اتصل بنا</a>
+            <a href="#home">الرئيسية</a> <a href="#services">خدماتنا</a> <a href="#systems">أنظمتنا</a>
+            <a href="#projects">أعمالنا</a> <a href="#pricing">الأسعار</a> <a href="#contact">اتصل بنا</a>
+            <a href="#" id="privacyLink">سياسة الخصوصية</a>
+            <a href="#" id="termsLink">شروط الاستخدام</a>
+            <a href="#" id="faqLink">الأسئلة الشائعة</a>
         </div>
-        <p>🌧️ الغيث لتصميم وإنشاء الأنظمة والتطبيقات © 2025</p>
-        <p style="font-size:14px; margin-top:10px;">نُحوِّل أفكارك إلى أنظمة رقمية ذكية تنمي أعمالك</p>
-        <p style="font-size:12px; margin-top:15px;">📍 الحديدة - الجمهورية اليمنية | خدمة 24/7</p>
+        <p>🌧️ الغيث - تصميم وتطوير الأنظمة والتطبيقات © 2025</p>
+        <p>📍 الحديدة - اليمن | خدمة 24/7</p>
+        <div class="counter-box"><span>🌍 إجمالي زوار الموقع:</span><span id="viewCounter" class="counter-number">0</span></div>
+        <div class="counter-box"><span>⭐ تقييم الموقع:</span><span style="color:#f5e56b">★★★★★ 4.9/5</span></div>
     </div>
 </footer>
 
-<script>
-    // نموذج الاتصال
-    const contactForm = document.getElementById('contactForm');
-    const successMessage = document.getElementById('successMessage');
-
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // هنا يمكن إضافة كود إرسال البيانات إلى الخادم
-        // حالياً سنعرض رسالة نجاح فقط
-
-        successMessage.style.display = 'block';
-        contactForm.reset();
-
-        // إخفاء الرسالة بعد 5 ثوان
-        setTimeout(() => {
-            successMessage.style.display = 'none';
-        }, 5000);
-    });
-
-    // تحميل الملف التعريفي
-    document.getElementById('downloadBrochure').addEventListener('click', function(e) {
-        e.preventDefault();
-        alert("📄 سيتم إرسال الملف التعريفي عبر الواتساب قريباً.\nللحصول عليه فوراً، تواصل معنا على واتساب: 967773014017+");
-    });
-
-    // تأثيرات عند التمرير
-    window.addEventListener('scroll', function() {
-        const header = document.querySelector('header');
-        if (window.scrollY > 100) {
-            header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-        } else {
-            header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.1)';
-        }
-    });
+<!-- Tawk.to Chatbot -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69ea224e11e0221c317aa9b1/1jmt9c143';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
 </script>
 
+<script>
+    // القائمة
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if(menuToggle) menuToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
+    document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', () => navLinks.classList.remove('show')));
+    
+    // نموذج الاتصال
+    document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const msg = document.getElementById('successMessage');
+        if(msg) { msg.style.display = 'block'; this.reset(); setTimeout(() => msg.style.display = 'none', 5000); }
+    });
+    
+    // النوافذ
+    const modals = { privacy: document.getElementById('privacyModal'), terms: document.getElementById('termsModal'), faq: document.getElementById('faqModal') };
+    const closeBtns = { privacy: document.getElementById('closePrivacy'), terms: document.getElementById('closeTerms'), faq: document.getElementById('closeFaq') };
+    document.getElementById('privacyLink')?.addEventListener('click', (e) => { e.preventDefault(); if(modals.privacy) modals.privacy.classList.add('show'); });
+    document.getElementById('termsLink')?.addEventListener('click', (e) => { e.preventDefault(); if(modals.terms) modals.terms.classList.add('show'); });
+    document.getElementById('faqLink')?.addEventListener('click', (e) => { e.preventDefault(); if(modals.faq) modals.faq.classList.add('show'); });
+    for(let k in closeBtns) closeBtns[k]?.addEventListener('click', () => { if(modals[k]) modals[k].classList.remove('show'); });
+    window.addEventListener('click', (e) => { for(let m of Object.values(modals)) if(m && e.target === m) m.classList.remove('show'); });
+    
+    // Cookie
+    const cookieConsent = document.getElementById('cookieConsent');
+    const acceptCookies = document.getElementById('acceptCookies');
+    if(!localStorage.getItem('cookies_accepted')) cookieConsent?.classList.add('show');
+    acceptCookies?.addEventListener('click', () => { localStorage.setItem('cookies_accepted', 'true'); cookieConsent?.classList.remove('show'); });
+    
+    // عداد الزوار
+    let views = localStorage.getItem('alghaith_views');
+    if(!views) { views = 28; localStorage.setItem('alghaith_views', views); }
+    else { views = parseInt(views) + 1; localStorage.setItem('alghaith_views', views); }
+    document.getElementById('viewCounter').textContent = views.toLocaleString('ar-EG');
+    
+    // الترجمة
+    let isEnglish = false;
+    const translations = { ar: { 'الرئيسية':'Home','خدماتي':'Services','أنظمتي':'Systems','أعمالي':'Projects','آراء العملاء':'Testimonials','اتصل بي':'Contact','خدماتنا':'Our Services','أنظمتنا':'Our Systems','اتصل بنا':'Contact Us','سياسة الخصوصية':'Privacy Policy','شروط الاستخدام':'Terms of Use','الأسئلة الشائعة':'FAQ','الأسعار':'Pricing' }, en: { 'Home':'الرئيسية','Services':'خدماتي','Systems':'أنظمتي','Projects':'أعمالي','Testimonials':'آراء العملاء','Contact':'اتصل بي','Our Services':'خدماتنا','Our Systems':'أنظمتنا','Contact Us':'اتصل بنا','Privacy Policy':'سياسة الخصوصية','Terms of Use':'شروط الاستخدام','FAQ':'الأسئلة الشائعة','Pricing':'الأسعار' } };
+    function translatePage(lang) { document.querySelectorAll('.footer-links a, .nav-links a').forEach(el => { let txt = el.textContent.trim(); if(lang === 'en' && translations.ar[txt]) el.textContent = translations.ar[txt]; else if(lang === 'ar' && translations.en[txt]) el.textContent = translations.en[txt]; }); }
+    document.getElementById('translateBtn')?.addEventListener('click', () => { isEnglish = !isEnglish; translatePage(isEnglish ? 'en' : 'ar'); document.getElementById('translateBtn').textContent = isEnglish ? '🇸🇦 العربية' : '🇬🇧 English'; if(isEnglish) { document.body.classList.add('english'); document.body.setAttribute('dir','ltr'); } else { document.body.classList.remove('english'); document.body.setAttribute('dir','rtl'); } });
+</script>
 </body>
 </html>
